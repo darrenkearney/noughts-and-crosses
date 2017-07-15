@@ -24,7 +24,6 @@ function game() {
     if ( is_in_play ) {
 
         // Check for victory
-
         // Need's three in a line
 
         teststr = "";
@@ -51,40 +50,10 @@ function game() {
                     gameOver();
                     break;
                 }
-                // // Check each row on the test board for win conditions
-                // if (y == board.length) {
-                //     if ( test[y] === [[player],[player],[player]] ){
-                //         gameOver();
-                //         break;
-                //     }
-                // }
             }
         }
-        // Check each row on the test board for win conditions
-        // for (y in test) {
-        //     console.log("test[y]: "+test[y] );
-
-        //     if ( test[y] === [player,player,player] ){
-        //         gameOver();
-        //         console.log("test")
-        //         break;
-        //     }
-        // }
 
         console.log(test);
-
-        // for ( var i=0; i<board[0].length; i++ ) {
-        //     for (x in board[i]) {
-        //         if ( board[i][x] === [[player],[player],[player]] ) {
-
-        //         }
-        //     }
-        //     if ( board[y] === [[player],[player],[player]] ){
-        //         gameOver();
-        //         break;
-        //     }
-        // }
-
 
         if (board[0][0] === player && board[1][1] === player && board[2][2] === player ) {
             gameOver();
